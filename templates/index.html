@@ -23,8 +23,14 @@
             font-family: Verdana, Geneva, sans-serif;
         }
         .tagline {
-            color: #888;
-            padding-bottom: 1em;
+            color: #666;
+        }
+        .break {
+            margin-top: 1em;
+            margin-bottom: 1em;
+            background-color: #FF847C; 
+            height: 2px; 
+            width: 100%;
         }
         .links {
             padding-top: 3em;
@@ -63,14 +69,23 @@
         <div class="col-6">
           <div class="row" style="padding-top: 1em">
             <div class="col">
-              <img src="img/immutableweb-logo.png" class="logo">
+              <img src="/static/img/immutableweb-logo.png" class="logo">
             </div>
           </div>
 
           <div class="row">
             <div class="col content">
               <p class="tagline">
-                The Immutable Web aims to create a building block for a decentralized, resilient web.
+                The Immutable Web aims to create a robust data storage layer for a decentralized, resilient web.
+              </p>
+              <div class="break">
+              </div>
+              <p>
+                Today's web provides few options for storing data in a robust manner outside of corporate and government
+                control. If a person with enough money, a corporation 
+                or government want your data wiped off the web, it isn't very hard to do. In order to respond to the
+                issues that face the world today, we need to be able to collect data on the net, knowing that it is safe
+                and won't be erased by someone who doesn't like this data.
               </p>
               <p>
                 This project is currently in the planning stages and no code has been written. At this
@@ -91,10 +106,15 @@
                   Should we create this project?
                 </li>
               </ul>
+              <p>
+                 To find out more about this proposed project, please download and read the white paper below.
+                 If you have feedback or question, please send an email below. If you found concrete issues 
+                 in the white paper that need addressing, please create a GitHub issue for it:
+              </p>
               <div class="row links">
                 <div class="col-2"></div>
                 <div class="col-4 linkrow">
-                  <a href="">
+                  <a href="/static/pdf/immutable-web-white-paper-20180723.pdf">
                     <i class="fas fa-file-alt faicons"></i>
                     <p class="icontext">
                       White Paper
@@ -115,18 +135,19 @@
               <div class="row links linkrow">
                 <div class="col-2"></div>
                 <div class="col-4">
-                  <a href="mailto:feedback@immutableweb.org"">
+                  <a href="mailto:feedback@immutableweb.org">
                     <i class="fas fa-at faicons"></i>
                     <p class="icontext">
-                      feedback@immutableweb.org  
+                      feedback@<br>immutableweb.org  
                     </p>
                   </a>
                 </div>
                 <div class="col-4">
-                  <i class="fab fa-twitter faicons"></i>
-                  <p class="icontext">
-                    @mayhemBCN
-                  </p>
+                  <a href="https://twitter.com/MayhemBCN">
+                    <i class="fab fa-twitter faicons"></i>
+                    <p class="icontext">
+                      @mayhemBCN
+                    </p>
                   </a>
                 </div>
                 <div class="col-2"></div>
