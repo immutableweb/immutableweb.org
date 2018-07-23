@@ -16,6 +16,8 @@ app.config.update(dict(
     TEMPLATE_FOLDER = "templates"
 ))
 
+cli = click.Group()
+
 @cli.command()
 @click.option("--host", "-h", default="0.0.0.0", show_default=True)
 @click.option("--port", "-p", default=8080, show_default=True)
