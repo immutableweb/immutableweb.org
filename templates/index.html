@@ -14,10 +14,26 @@
         .head {
             width: 100%;
         }
-        .logo {
-            margin: 2em;
-            width: 400px;
-            padding-bottom: 25px;
+        @media (max-width: 575.98px) {
+            .logo {
+                margin: 1em;
+                width: 200px;
+                padding-bottom: 15px;
+            }
+        }
+        @media (min-width: 576px) {
+            .logo {
+                margin: 1.5em;
+                width: 300px;
+                padding-bottom: 20px;
+            }
+        }
+        @media (min-width: 768px) {
+            .logo {
+                margin: 2em;
+                width: 400px;
+                padding-bottom: 25px;
+            }
         }
         .content {
             font-size: 14pt;
