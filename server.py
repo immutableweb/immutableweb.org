@@ -4,7 +4,7 @@ import click
 from werkzeug.serving import run_simple
 from flask import Flask, jsonify, request, render_template, redirect, session, url_for, flash
 from werkzeug.exceptions import NotFound, InternalServerError, BadRequest, Unauthorized
-from werkzeug.contrib.fixers import ProxyFix
+from werkzeug.middleware.proxy_fix import ProxyFix
 
 app = Flask(__name__)
 app.wsgi_app = ProxyFix(app.wsgi_app)
