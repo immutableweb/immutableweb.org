@@ -1,0 +1,17 @@
+version: "3.3"
+
+services:
+
+  immutableweb-org:
+    build: .
+    expose:
+      - "3031"
+    environment:
+      - VIRTUAL_HOST=test.immutableweb.org
+      - LETSENCRYPT_HOST=mayhem.cat
+      - LETSENCRYPT_EMAIL=mayhem@gmail.com
+
+networks:
+  default:
+    name: nginx-proxy
+    external: true
