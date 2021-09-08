@@ -7,7 +7,7 @@ services:
     expose:
       - "3031"
     environment:
-      - VIRTUAL_HOST=test.immutableweb.org
+      - VIRTUAL_HOST=immutableweb.org
       - LETSENCRYPT_HOST=mayhem.cat
       - LETSENCRYPT_EMAIL=mayhem@gmail.com
 
